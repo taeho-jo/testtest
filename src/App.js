@@ -1,23 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import Fullpage, {FullpageSection, FullPageSections} from "@ap.cx/react-fullpage";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Fullpage>
+
+        <FullPageSections>
+
+          <FullpageSection style={{
+            backgroundColor: 'lime',
+            padding: '1em',
+          }}>1</FullpageSection>
+          <FullpageSection style={{
+            backgroundColor: 'coral',
+            padding: '1em',
+          }}>
+            <div style={{backgroundColor: 'white', width: '900px', height: '900px', overflowY: 'scroll'}}>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+              <p style={{fontSize:'80px', margin: 0}}>123123123123123123</p>
+            </div>
+          </FullpageSection>
+          <FullpageSection style={{
+            backgroundColor: 'firebrick',
+            padding: '1em',
+          }}>3</FullpageSection>
+
+        </FullPageSections>
+
+      </Fullpage>
     </div>
   );
 }
